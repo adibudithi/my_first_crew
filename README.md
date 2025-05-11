@@ -1,6 +1,6 @@
-# Adi's First Crew
+# Adi's First Flow
 
-Welcome to Adi's first crew project, powered by [crewAI](https://crewai.com). This template is designed to help you set up a multi-agent AI system with ease, leveraging the powerful and flexible framework provided by crewAI. Our goal is to enable your agents to collaborate effectively on complex tasks, maximizing their collective intelligence and capabilities.
+Welcome to my first flow, powered by [crewAI](https://crewai.com). I used Google's LLM [Gemini](https://gemini.google.com/) and the Google search API [Serper](https://serper.dev/).
 
 ## Installation
 
@@ -18,34 +18,35 @@ Next, navigate to your project directory and install the dependencies:
 ```bash
 crewai install
 ```
-### Customizing
 
-**Add your `GEMINI_API_KEY` into the `.env` file**
+### API Keys
 
-- Modify `src/my_first_crew/config/agents.yaml` to define your agents
-- Modify `src/my_first_crew/config/tasks.yaml` to define your tasks
-- Modify `src/my_first_crew/crew.py` to add your own logic, tools and specific args
-- Modify `src/my_first_crew/main.py` to add custom inputs for your agents and tasks
+**Add your `GEMINI_API_KEY` and `SERPER_DEV_KEY` into the `.env` file**
+
+## Usage
+
+Write a topic of your choosing in the `input.topic` field in the `run()` function of `main.py`.
 
 ## Running the Project
 
-To kickstart your crew of AI agents and begin task execution, run this from the root folder of your project:
+To kickstart your flow and begin execution, run this from the root folder of your project:
 
 ```bash
-$ crewai run
+crewai run
 ```
 
-This command initializes the my_first_crew Crew, assembling the agents and assigning them tasks as defined in your configuration.
+This command initializes the guide_creator_flow Flow as defined in your configuration.
 
 This example, unmodified, will run the create a `report.md` file with the output of a research on LLMs in the root folder.
 
-## Understanding Your Crew
+## Understanding the Crew
 
-Adi's first crew is composed of multiple AI agents, each with unique roles, goals, and tools. These agents collaborate on a series of tasks, defined in `config/tasks.yaml`, leveraging their collective skills to achieve complex objectives. The `config/agents.yaml` file outlines the capabilities and configurations of each agent in your crew.
+Adi's first flow is composed of multiple AI agents, each with unique roles, goals, and tools. These agents collaborate on a series of tasks, defined in `config/tasks.yaml`, leveraging their collective skills to achieve complex objectives. The `config/agents.yaml` file outlines the capabilities and configurations of each agent in the crew.
 
 ## Support
 
-For support, questions, or feedback regarding the MyFirstCrew Crew or crewAI.
+For support, questions, or feedback regarding crewAI.
+
 - Visit our [documentation](https://docs.crewai.com)
 - Reach out to us through our [GitHub repository](https://github.com/joaomdmoura/crewai)
 - [Join our Discord](https://discord.com/invite/X4JWnZnxPb)
